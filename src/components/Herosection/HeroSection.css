@@ -1,0 +1,210 @@
+/* Styling for Hero Section */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #e0f7fa;
+  position: relative;
+  width: 100%; /* Full width */
+  margin: 0; /* Remove any margin */
+}
+
+/* Remove any space that could cause horizontal scrolling */
+.hero-heading-container {
+  width: 100%; /* Full width */
+}
+
+.hero-heading {
+  font-size: 3rem;
+  line-height: 1.2;
+  color: #333;
+  margin: 0;
+}
+
+/* Search Bar Styling */
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 50px;
+  padding: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 60%; /* Default width to be medium-sized */
+  max-width: 700px; /* Set max-width for larger screens */
+  margin: 2rem auto; /* Center the search bar horizontally */
+}
+
+/* Ensure that input and button adjust accordingly */
+.search-bar input {
+  border: none;
+  outline: none;
+  width: 80%; /* Keep the input slightly smaller than the search bar */
+  padding: 0.5rem;
+  border-radius: 50px;
+  font-size: 1rem;
+}
+
+.search-bar button {
+  background-color: #32CD32;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 0.5rem 2rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .search-bar {
+    width: 80%; /* Adjust search bar width on medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .search-bar {
+    width: 90%; /* Adjust search bar width on small screens */
+  }
+}
+
+
+
+/* Styling for the NEW tag */
+.new-tag {
+  background: linear-gradient(135deg, #ffa726, #ff7043); /* Gradient for NEW tag */
+  color: white;
+  padding: 0.1rem 0.5rem; /* Minimal padding on top/bottom, wider on left/right */
+  border-radius: 15px; /* Rounded corners */
+  font-size: 0.8rem; /* Adjust font size if needed */
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Styling for the surrounding container */
+.new-tagtext {
+  background-color: white;
+  color: #333;
+  border: 0.1rem ; /* Minimal padding around the text */
+  padding: 0.1rem 0.5rem;
+  border-radius: 25px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem; /* Spacing between NEW tag and text */
+  font-size: 0.9rem; /* Adjust font size if needed */
+}
+
+
+/* Decorative Images */
+.decorative-image {
+  position: absolute;
+  z-index: 0;
+  width: 80px; /* Default size */
+  transition: transform 0.3s ease; /* Smooth transition for rotation */
+}
+
+.burger {
+  top: 30%; /* Adjust this value for vertical position */
+  right: 10%; /* Adjust this value for horizontal position */
+  transform: rotate(-20deg); /* Rotate the burger image to the left */
+}
+
+.plant {
+  bottom: 10%; /* Adjust this value for vertical position */
+  left: 5%; /* Adjust this value for horizontal position */
+  transform: rotate(20deg); /* Rotate the plant image to the right */
+}
+
+/* Hide burger and plant images on small screens */
+@media (max-width: 480px) {
+  .decorative-image {
+    display: none; /* Hide decorative images on small screens */
+  }
+}
+
+
+/* Styling for Overlapping Images (image1, image2, and image3) */
+.image-wrapper {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle; /* Aligns images with the text */
+}
+
+.image-wrapper img {
+  width: 90px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+/* Individual Position Adjustments for image1, image2, and image3 */
+.image-1 img {
+  position: relative;
+  top: 10px; /* Move image1 slightly down */
+}
+
+.image-2 img {
+  position: relative;
+  top: 15px; /* Move image2 slightly more down */
+}
+
+.image-3 img {
+  position: relative;
+  top: 20px; /* Move image3 slightly further down */
+}
+
+/* Hover Effect */
+.image-wrapper img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero-heading {
+    font-size: 1.5rem;
+  }
+
+  .image-wrapper img {
+    width: 70px; /* Reduce size for medium screens */
+  }
+
+  /* Adjust positions on medium screens */
+  .image-1 img {
+    top: 8px;
+  }
+
+  .image-2 img {
+    top: 10px;
+  }
+
+  .image-3 img {
+    top: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-heading {
+    font-size: 1.3rem;
+  }
+
+  .image-wrapper img {
+    width: 60px; /* Further reduction in size */
+  }
+
+  /* Adjust positions on small screens */
+  .image-1 img {
+    top: 5px;
+  }
+
+  .image-2 img {
+    top: 7px;
+  }
+
+  .image-3 img {
+    top: 8px;
+  }
+}
+
+
+
+
+

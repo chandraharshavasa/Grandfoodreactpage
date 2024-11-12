@@ -1,0 +1,121 @@
+/* General Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: #f0f8ff;
+  width: 100%; /* Ensure full width */
+  position: relative;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+/* Navigation Links Styling */
+.nav-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-links li {
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.sign-up {
+  background-color: #32CD32;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.sign-up:hover {
+  background-color: #28a745;
+}
+
+/* Menu Icon Styling */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 2rem; /* Increased size for visibility */
+  z-index: 20;
+  margin-right: 10px; /* Ensure space from the edge */
+}
+
+/* Responsive Styling for Smaller Devices */
+@media (max-width: 768px) {
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #f0f8ff;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .nav-links.open {
+    transform: translateX(0);
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .sign-up {
+    width: 80%;
+    text-align: center;
+    padding: 0.7rem;
+    font-size: 1rem;
+  }
+}
+
+/* Adjustments for Large Screens */
+@media (min-width: 1024px) {
+  .nav-links {
+    gap: 3rem; /* Space out the links */
+  }
+
+  .sign-up {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    max-width: 150px;
+    white-space: nowrap;
+  }
+}
+
+/* Overflow handling for very small screens */
+@media (max-width: 480px) {
+  .nav-links {
+    font-size: 0.9rem;
+    gap: 1rem;
+  }
+
+  .sign-up {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+    width: 70%;
+  }
+
+  .menu-icon {
+    font-size: 2rem;
+    margin-right: 5px; /* Space for the icon */
+  }
+}

@@ -1,0 +1,43 @@
+.footer {
+  background-color: #f0f8ff;
+  padding: 2rem 1rem; /* Padding adjusted */
+  text-align: center;
+  width: 100%; /* Full width */
+}
+
+/* Other footer styling remains unchanged */
+
+  .reviews-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .avatars {
+    display: flex;
+    gap: -10px;
+  }
+  
+  .avatars img {
+    border-radius: 50%;
+    border: 2px solid white;
+  }
+  
+  .review-text p {
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .rating {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 1.1rem;
+    color: #32CD32;
+  }
+  
+  .rating span {
+    color: #888;
+  }
+  
